@@ -1,0 +1,32 @@
+package Entity.Character;
+import Entity.Entity;
+
+public class Character extends Entity {
+    protected String name;
+    protected int hp;
+    protected int coins;
+
+    public Character(double x, double y, double width, double height, String name, int hp, int coins) {
+        super(x, y, width, height);
+        this.name = name;
+        this.hp = hp;
+        this.coins = coins;
+    }
+
+    @Override
+    public void update() {
+        // Implement character-specific update logic here
+    }
+
+    @Override
+    public void draw(GraphicsContext gc) {
+        // Implement character-specific drawing logic here
+    }
+
+    public void takeDamage(int damage) {
+        hp -= damage;
+        if (hp <= 0) {
+            destroy();
+        }
+    } 
+}

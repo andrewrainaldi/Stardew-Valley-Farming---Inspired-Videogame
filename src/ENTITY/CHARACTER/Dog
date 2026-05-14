@@ -1,0 +1,17 @@
+package Entity.Character.Sons;
+public class Dog extends Character {
+    public Dog(double x, double y, double width, double height, String name, int hp, int coins) {
+        super(x, y, width, height, name, hp, coins);
+    }
+
+    @Override
+    public void update() {
+        // Implement dog-specific update logic here
+    }
+
+    @Override
+    public void draw(GraphicsContext gc) {
+        // Implement dog-specific drawing logic here
+    }
+    
+}
