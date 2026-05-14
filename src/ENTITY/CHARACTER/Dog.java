@@ -1,5 +1,7 @@
 package Entity.Character.Sons;
 public class Dog extends Character {
+
+    // a dog is a helper of the human
     public Dog(double x, double y, double width, double height, String name, int hp, int coins) {
         super(x, y, width, height, name, hp, coins);
     }
